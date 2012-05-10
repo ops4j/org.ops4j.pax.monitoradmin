@@ -103,9 +103,7 @@
                         <supportedProjectType>jar</supportedProjectType>
                     </supportedProjectTypes>
                     <instructions>
-                        <Export-Package>
-                            org.osgi.service.monitor;version="1.0"
-                        </Export-Package>
+                        <Export-Package/>
                         <Import-Package>
                             org.osgi*
                         </Import-Package>
@@ -117,15 +115,6 @@
                             Bnd-LastModified, Built-By, Private-Package, Tool, Build-Jdk, Include-Resource
                         </_removeheaders>
                     </instructions>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.0</version>
-                <configuration>
-                    <tagBase>http://osgilab.googlecode.com/svn/tags/</tagBase>
-                    <mavenExecutorId>forked-path</mavenExecutorId>
                 </configuration>
             </plugin>
         </plugins>
